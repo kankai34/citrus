@@ -136,6 +136,7 @@
       
         <plugin folder="citruscart" plugin="shipping_standard" publish="true" group="citruscart" element="shipping_standard" />
         <plugin folder="citruscart" plugin="payment_paypal" group="citruscart" element="payment_paypal" />        
+		<plugin folder="citruscart" plugin="payment_paysbuy" group="citruscart" element="payment_paysbuy" />        
         <plugin folder="citruscart" plugin="tool_csvimporter" publish="true" group="citruscart" element="tool_csvimporter" />
         <plugin folder="citruscart" plugin="tool_installsampledata" publish="true" group="citruscart" element="tool_installsampledata" />
         <plugin folder="citruscart" plugin="tool_redshopmigration" publish="true" group="citruscart" element="tool_redshopmigration" />

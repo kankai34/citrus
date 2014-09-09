@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension version="3.0" type="plugin" group="citruscart" method="upgrade">
+	<name>PLG_CITRUSCART_PAYMENT_PAYSBUY</name>
+	<version>1.0</version>
+	<creationDate>August 2011</creationDate>
+	<author>Marvelic Engine Co.,Ltd</author>
+	<authorEmail>info@marvelic.co.th</authorEmail>
+	<authorUrl>http://www.marvelic.co.th/</authorUrl>
+	<copyright>Marvelic Engine Co.,Ltd.</copyright>
+	<license>GNU General Public License v2</license>
+	<description>PLG_CITRUSCART_PAYMENT_PAYSBUY_PLUGINDESC</description>
+
+	<files>
+		<filename plugin="payment_paysbuy">payment_paysbuy.php</filename>
+		<folder>payment_paysbuy</folder>
+	</files>
+
+	<languages>
+		<language tag="en-GB">languages/en-GB/en-GB.plg_citruscart_payment_paysbuy.ini</language>
+		<language tag="th-TH">languages/th-TH/th-TH.plg_citruscart_payment_paysbuy.ini</language>
+	</languages>
+	
+	<config>
+		<fields name="params">
+			<fieldset name="basic" addfieldpath="/administrator/components/com_citruscart/elements">
+				<field name="biz" type="text" size="50" default="" label="Paysbuy Email" description="Paysbuy Email Desc"/>
+				<field name="sandbox" type="radio" default="0" label="Sandbox Mode" description="Enables sandbox mode.">
+					<option value="0">COM_CITRUSCART_NO</option>
+					<option value="1">COM_CITRUSCART_YES</option>
+				</field>
+				<field name="visa" type="radio" default="0" label="VISA and MasterCard" description="">
+					<option value="0">COM_CITRUSCART_NO</option>
+					<option value="1">COM_CITRUSCART_YES</option>
+				</field>
+				<field name="amex" type="radio" default="0" label="American Express" description="">
+					<option value="0">COM_CITRUSCART_NO</option>
+					<option value="1">COM_CITRUSCART_YES</option>
+				</field>
+				<field name="currency" type="list" default="764" label="Currency" description="">
+					<option value="764">THB</option>
+					<option value="840">USD</option>
+				</field>
+			</fieldset>
+		</fields>
+	</config>
+</extension>
