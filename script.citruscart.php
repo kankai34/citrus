@@ -255,7 +255,7 @@ class CitruscartInstaller extends JObject
         }
             jimport('joomla.filesystem.folder');
 
-        $src = '/plugins/system/dioscouri/dioscouri/';
+        $src = '\\plugins\\system\\dioscouri\\dioscouri\\';
         $dest = '/libraries/dioscouri/';
         $src_folders = JFolder::folders(JPATH_SITE.'/plugins/system/dioscouri/dioscouri/', '.', true, true);
         if (!empty($src_folders)) {
@@ -269,7 +269,7 @@ class CitruscartInstaller extends JObject
         }
 
         // move files from plugins to libraries
-        $src = '/plugins/system/dioscouri/dioscouri/';
+		$src = '\\plugins\\system\\dioscouri\\dioscouri\\';
         $dest = '/libraries/dioscouri/';
         $src_files = JFolder::files(JPATH_SITE.'/plugins/system/dioscouri/dioscouri/', '.', true, true);
         if (!empty($src_files)) {

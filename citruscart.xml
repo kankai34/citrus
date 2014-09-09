@@ -38,6 +38,7 @@
 
 	<languages folder="site/language">
 		<language tag="en-GB">/en-GB.com_citruscart.ini</language>
+		<language tag="th-TH">/th-TH.com_citruscart.ini</language>
 	</languages>
 	
 	<!-- Application/administrator -->
@@ -63,6 +64,9 @@
 			<language tag="en-GB">/en-GB.com_citruscart.ini</language>
 			<language tag="en-GB">/en-GB.com_citruscart.sys.ini</language>
 			<language tag="en-GB">/en-GB.com_citruscart.menu.ini</language>
+			<language tag="th-TH">/th-TH.com_citruscart.ini</language>
+			<language tag="th-TH">/th-TH.com_citruscart.sys.ini</language>
+			<language tag="th-TH">/th-TH.com_citruscart.menu.ini</language>
 		</languages>
 	</administration>
 	

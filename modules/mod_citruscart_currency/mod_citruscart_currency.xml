@@ -17,6 +17,7 @@
 	</files>
 	<languages>
 		<language tag="en-GB">languages/en-GB.mod_citruscart_currency.ini</language>
+		<language tag="th-TH">languages/th-TH.mod_citruscart_currency.ini</language>
 	</languages>
 	<config>
 		<fields name="params">

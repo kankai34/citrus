@@ -16,6 +16,7 @@
 	</files>
 	<languages folder="languages">
 		<language tag="en-GB">en-GB.plg_quickicon_citruscarticon.ini</language>
+		<language tag="th-TH">th-TH.plg_quickicon_citruscarticon.ini</language>
 	</languages>
 	<config>
 		

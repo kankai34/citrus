@@ -16,6 +16,7 @@
 	</files>
 	<languages>
 		<language tag="en-GB">languages/en-GB.plg_citruscart_bug_report.ini</language>
+		<language tag="th-TH">languages/th-TH.plg_citruscart_bug_report.ini</language>
 	</languages>
 	<config></config>
 	<fields name="params"></fields>

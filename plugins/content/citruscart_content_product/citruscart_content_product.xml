@@ -15,6 +15,7 @@
 	</files>
 	<languages folder="languages">
 		<language tag="en-GB">en-GB.plg_content_citruscart_content_product.ini</language>
+		<language tag="th-TH">th-TH.plg_content_citruscart_content_product.ini</language>
 	</languages>
 	<config>
 		<fields name="params">

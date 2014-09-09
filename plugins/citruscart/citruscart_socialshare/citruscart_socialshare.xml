@@ -16,7 +16,7 @@
 	</files>
 	<languages folder="languages">
 		<language tag="en-GB">en-GB.plg_citruscart_citruscart_socialshare.ini</language>
-		<language tag="en-GB">en-GB.plg_citruscart_citruscart_socialshare.sys.ini</language>
+		<language tag="th-TH">th-TH.plg_citruscart_citruscart_socialshare.sys.ini</language>
 	</languages>
 	<config>
 		<fields name="params">

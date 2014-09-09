@@ -16,6 +16,7 @@
 
     <languages>
         <language tag="en-GB">languages/en-GB.plg_user_citruscart.ini</language>
+        <language tag="th-TH">languages/th-TH.plg_user_citruscart.ini</language>
     </languages>
            
 </extension>

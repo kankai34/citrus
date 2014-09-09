@@ -15,6 +15,7 @@
 	</files>
 	<languages folder="languages">
 		<language tag="en-GB">en-GB.plg_citruscart_tool_redshopmigration.ini</language>
+		<language tag="th-TH">th-TH.plg_citruscart_tool_redshopmigration.ini</language>
 	</languages>
 	<config></config>
 </extension>

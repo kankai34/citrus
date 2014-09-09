@@ -18,6 +18,7 @@
 	</files>
 	<languages folder="languages">
 		<language tag="en-GB">en-GB.mod_citruscart_products.ini</language>
+		<language tag="th-TH">th-TH.mod_citruscart_products.ini</language>
 	</languages>
 	<config>
 		<fields name="params">

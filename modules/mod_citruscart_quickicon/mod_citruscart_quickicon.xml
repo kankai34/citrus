@@ -19,6 +19,7 @@
 	</files>
 	<languages folder="languages">
 		<language tag="en-GB">en-GB.mod_citruscart_quickicon.ini</language>
+		<language tag="th-TH">th-TH.mod_citruscart_quickicon.ini</language>
 	</languages>
 	<config>
 		<fields name="params">
