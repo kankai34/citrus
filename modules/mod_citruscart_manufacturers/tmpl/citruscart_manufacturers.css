@@ -1,0 +1,14 @@
+#Citruscart_manufacturers_mod .level1 {font-size:90%;margin-top:5px;}
+#Citruscart_manufacturers_mod .level2 {font-size:80%;margin-left: 10px;background-image:none;}
+#Citruscart_manufacturers_mod .level3 {margin-left: 10px;}
+#Citruscart_manufacturers_mod .level4 {margin-left: 15px;}
+#Citruscart_manufacturers_mod .level5 {margin-left: 20px;}
+#citruscart_manufacturers_mod .manufacturerslist{border-top:1px solid #DCDCDC;}
+
+#citruscart_manufacturers_mod .manufacturerslist :hover{
+	background-color:#DCDCDC;
+}
+.citruscart_manufacturer_mod h5{
+	font-size:18px;	
+}
+

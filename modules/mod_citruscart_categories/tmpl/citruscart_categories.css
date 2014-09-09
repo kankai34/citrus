@@ -1,0 +1,15 @@
+#Citruscart_categories_mod .level1 {}
+#Citruscart_categories_mod .level2 {margin-left: 5px;}
+#Citruscart_categories_mod .level3 {margin-left: 10px;}
+#Citruscart_categories_mod .level4 {margin-left: 15px;}
+#Citruscart_categories_mod .level5 {margin-left: 20px;}
+#citruscart_categories_mod .product_categories{border-top:1px solid #DCDCDC;}
+
+#citruscart_categories_mod .product_categories :hover {
+	background-color:#DCDCDC;
+}
+
+#citruscart_category .categories_head {
+	font-size:18px;
+}
+
