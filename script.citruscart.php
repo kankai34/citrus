@@ -14,6 +14,10 @@
 /** ensure this file is being included by a parent file */
 defined('_JEXEC') or die('Restricted access');
 
+if(!defined('DS')) {
+	define('DS', DIRECTORY_SEPARATOR);
+}
+
 jimport('joomla.filesystem.file');
 class Com_CitruscartInstallerScript{
 
@@ -255,7 +259,7 @@ class CitruscartInstaller extends JObject
         }
             jimport('joomla.filesystem.folder');
 
-        $src = '\\plugins\\system\\dioscouri\\dioscouri\\';
+        $src = DS.'plugins'.DS.'system'.DS.'dioscouri'.DS.'dioscouri'.DS;
         $dest = '/libraries/dioscouri/';
         $src_folders = JFolder::folders(JPATH_SITE.'/plugins/system/dioscouri/dioscouri/', '.', true, true);
         if (!empty($src_folders)) {
@@ -269,7 +273,7 @@ class CitruscartInstaller extends JObject
         }
 
         // move files from plugins to libraries
-		$src = '\\plugins\\system\\dioscouri\\dioscouri\\';
+		$src = DS.'plugins'.DS.'system'.DS.'dioscouri'.DS.'dioscouri'.DS;
         $dest = '/libraries/dioscouri/';
         $src_files = JFolder::files(JPATH_SITE.'/plugins/system/dioscouri/dioscouri/', '.', true, true);
         if (!empty($src_files)) {
