@@ -17,7 +17,7 @@ Citruscart::load('CitruscartSelect', 'library.select');
 JTable::addIncludePath( JPATH_ADMINISTRATOR.'/components/com_citruscart/tables' );
 $helper = CitruscartHelperBase::getInstance();
 
-$url = 'index.php?option=com_citruscart&view=products&task=setCurrency&return='.base64_encode( JURI::getInstance()->__toString() );
+$url = JRoute::_( 'index.php?option=com_citruscart&view=currency&task=set&return='.base64_encode( JURI::getInstance()->__toString() ) , false);
 // Check the currently selected currency
 $selected = CitruscartHelperBase::getSessionVariable('currency_id', Citruscart::getInstance()->get( 'default_currencyid', 1 ) );
 ?>
