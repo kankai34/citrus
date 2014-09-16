@@ -5832,14 +5832,24 @@ COLLATE = utf8_general_ci;
 
 
 CREATE  TABLE IF NOT EXISTS `#__citruscart_wishlistitems` (
-  `wishlist_id` int(11) NOT NULL AUTO_INCREMENT,
-  `user_id` int(11) NOT NULL,
-  `wishlist_name` varchar(255) NOT NULL,
-  `privacy` int(11) NOT NULL DEFAULT '1' COMMENT 'public = 1, linkonly = 2, private  = 3',
-  `created_date` date NOT NULL,
-  `modified_date` date NOT NULL,
-  PRIMARY KEY (`wishlist_id`)
-) ENGINE=InnoDB  DEFAULT CHARSET=utf8;
+  `wishlistitem_id` INT NOT NULL AUTO_INCREMENT PRIMARY KEY,
+  `user_id` INT(11) NOT NULL,
+  `session_id` VARCHAR(255) NOT NULL,
+  `product_id` INT(11) NOT NULL,
+  `vendor_id` INT(11) NOT NULL,
+  `product_attributes` TEXT NOT NULL COMMENT 'A CSV of productattributeoption_id values, always in numerical order',
+  `last_updated` TIMESTAMP NOT NULL DEFAULT CURRENT_TIMESTAMP,
+  `wishlist_name` VARCHAR(255) NOT NULL,
+  `wishlistitem_params` TEXT NULL COMMENT 'Params for the wishlist item',
+  `privacy` INT(11) NOT NULL DEFAULT '1' COMMENT 'public = 1, linkonly = 2, private  = 3',
+  INDEX `idx_user_product` (`user_id` ASC, `product_id` ASC),
+  CONSTRAINT `fk_wishlists_products_`
+    FOREIGN KEY (`product_id`)
+    REFERENCES `#__citruscart_products` (`product_id`)
+    ON DELETE CASCADE)
+ENGINE = InnoDB
+DEFAULT CHARACTER SET = utf8
+COLLATE = utf8_general_ci;
 
 
 

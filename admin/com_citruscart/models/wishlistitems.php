@@ -69,7 +69,7 @@ class CitruscartModelWishlistItems extends CitruscartModelEav
         
         if (strlen($filter_wishlist))
         {
-		  $query->where('tbl.wishlist_id = '. $this->_db->Quote( (int) $filter_wishlist));
+		  $query->where('tbl.wishlistitem_id = '. $this->_db->Quote( (int) $filter_wishlist));
         }
 		if( !empty( $filter_privacy ) ) {
 			if( is_array( $filter_privacy ) ) {
@@ -88,9 +88,9 @@ class CitruscartModelWishlistItems extends CitruscartModelEav
 			$where[] = 'LOWER(uj.name) LIKE ' . $key;
 			
 			if( empty( $filter_user ) ) {
-				$query->where( '(' . implode( ' OR ', $where ) . ') AND tbl.wishlist_id = 0 ' );
+				$query->where( '(' . implode( ' OR ', $where ) . ') AND tbl.wishlistitem_id = 0 ' );
 			} else {
-				$query->where( '(' . implode( ' OR ', $where ) . ') AND tbl.wishlist_id = 0  AND ( tbl.user_id <> '.$this->_db->quote((int)$filter_user).' )' );        
+				$query->where( '(' . implode( ' OR ', $where ) . ') AND tbl.wishlistitem_id = 0  AND ( tbl.user_id <> '.$this->_db->quote((int)$filter_user).' )' );        
 			}
 		}
 		
@@ -107,9 +107,9 @@ class CitruscartModelWishlistItems extends CitruscartModelEav
 				$where[] = 'LOWER(uj.name) LIKE ' . $key;
 				
 				if( empty( $filter_user ) ) {
-					$query->where( '(' . implode( ' OR ', $where ) . ') AND tbl.wishlist_id = 0 ' );
+					$query->where( '(' . implode( ' OR ', $where ) . ') AND tbl.wishlistitem_id = 0 ' );
 				}  else {
-					$query->where( '(' . implode( ' OR ', $where ) . ') AND tbl.wishlist_id = 0  AND ( tbl.user_id <> '.$this->_db->quote((int)$filter_user).' )' );          
+					$query->where( '(' . implode( ' OR ', $where ) . ') AND tbl.wishlistitem_id = 0  AND ( tbl.user_id <> '.$this->_db->quote((int)$filter_user).' )' );          
 				}
 			}
 		}
@@ -132,7 +132,7 @@ class CitruscartModelWishlistItems extends CitruscartModelEav
 			
 			if (!empty($wheres)) 
 			{
-				$stmt = '(' . implode( ' OR ', $wheres ) . ') AND tbl.wishlist_id = 0 ';
+				$stmt = '(' . implode( ' OR ', $wheres ) . ') AND tbl.wishlistitem_id = 0 ';
 				if( !empty( $filter_user ) ) {
 					$stmt .= ' AND ( tbl.user_id <> '.$this->_db->quote((int)$filter_user).' )';
 				}
@@ -144,7 +144,7 @@ class CitruscartModelWishlistItems extends CitruscartModelEav
 	protected function _buildQueryJoins(&$query)
 	{
 		$query->join('LEFT', '#__citruscart_products AS p ON tbl.product_id = p.product_id');
-		$query->join('LEFT', '#__citruscart_wishlists AS wl ON tbl.wishlist_id = wl.wishlist_id');
+		$query->join('LEFT', '#__citruscart_wishlists AS wl ON tbl.wishlistitem_id = wl.wishlist_id');
 
 		$filter_search  = $this->getState( 'filter_search', '' );
 		$filter_search_any  = $this->getState( 'filter_search_any', '' );
