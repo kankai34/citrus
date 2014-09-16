@@ -126,9 +126,9 @@ $app = JFactory::getApplication();
 	       		<?php if ($helpfuness_enable && $user->id != $review->user_id && !$isFeedback) :?>
 
       			 <?php echo JText::_('COM_CITRUSCART_WAS_THIS_REVIEW_HELPFUL_TO_YOU'); ?>
-      			 <a href="<?php echo JRoute::_( "index.php?option=com_citruscart&view=helpfulness&task=reviewHelpfulness&helpfulness=1&productcomment_id=".$review->productcomment_id."&product_id=".$review->product_id, false ); ?>"><?php echo JText::_('COM_CITRUSCART_YES'); ?></a>
-      			 <a href="<?php echo JRoute::_( "index.php?option=com_citruscart&view=helpfulness&task=reviewHelpfulness&helpfulness=0&productcomment_id=".$review->productcomment_id."&product_id=".$review->product_id, false ); ?>"><?php echo JText::_('COM_CITRUSCART_NO'); ?></a>
-      			 <a href="<?php echo JRoute::_( "index.php?option=com_citruscart&view=helpfulness&task=reviewHelpfulness&report=1&productcomment_id=".$review->productcomment_id."&product_id=".$review->product_id, false ); ?>">(<?php echo JText::_('COM_CITRUSCART_REPORT_INAPPROPRIATE_REVIEW'); ?>)</a>
+      			 <a href="index.php?option=com_citruscart&view=products&task=reviewHelpfullness&helpfulness=1&productcomment_id=<?php echo $review->productcomment_id; ?>&product_id=<?php echo $review->product_id; ?>"><?php echo JText::_('COM_CITRUSCART_YES'); ?></a>
+      			 <a href="index.php?option=com_citruscart&view=products&task=reviewHelpfullness&helpfulness=0&productcomment_id=<?php echo$review->productcomment_id;?>&product_id=<?php echo $review->product_id;?>"><?php echo JText::_('COM_CITRUSCART_NO'); ?></a>
+      			 <a href="index.php?option=com_citruscart&view=products&task=reviewHelpfullness&report=1&productcomment_id=<?php echo$review->productcomment_id;?>&product_id=<?php echo $review->product_id;?>">(<?php echo JText::_('COM_CITRUSCART_REPORT_INAPPROPRIATE_REVIEW'); ?>)</a>
       			<?php endif;?>
 	</td>
 	<td>
